@@ -9,6 +9,8 @@ const FollowersContainer = styled.section `
     align-items: left;
     width: max-content;
     margin: 0 auto;
+    height: 80vh;
+    overflow-y: scroll;
     h3{
         font-size: 4rem;
         font-style: oblique;
