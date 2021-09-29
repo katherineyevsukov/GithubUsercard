@@ -10,10 +10,14 @@ const FollowersContainer = styled.section `
     width: max-content;
     margin: 0 auto;
     height: 80vh;
+    padding: 2em 4rem;
     overflow-y: scroll;
+    border: 2px solid white;
     h3{
         font-size: 4rem;
         font-style: oblique;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
     
 `

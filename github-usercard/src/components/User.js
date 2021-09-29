@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledUserContainer = styled.div`
   grid-row-start: 1;
   grid-column: 1/6;
+  border: 1px solid whitesmoke;
   
 
   h2 {
@@ -13,6 +14,7 @@ const StyledUserContainer = styled.div`
 
   .user-container{
     padding: 2rem;
+    
   }
   .user-info-container {
     height: 30vh;
@@ -23,7 +25,7 @@ const StyledUserContainer = styled.div`
   .chart-container{
      
       grid-column: 1/6;
-      padding: 1em 0;
+      padding: 1em;
   }
  
 `;

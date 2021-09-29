@@ -4,6 +4,7 @@ import User from "./components/User";
 import fetchGithubUsers from "./services/fetchGithubInfo";
 import SearchBar from "./components/SearchBar";
 import Followers from "./components/Followers"
+import githublogo from "../src/githublogo.png"
 
 const StyledApp = styled.div`
   height: 100vh;
@@ -20,9 +21,13 @@ const StyledApp = styled.div`
 
 
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     text-align: center;
     padding: 0;
+  }
+  
+  header img{
+    height: 5vh;
   }
 `;
 
@@ -64,7 +69,8 @@ class App extends React.Component {
       <StyledApp>
         <div className="right-side-container">
         <header className="App-header">
-          <h1>Github Profile</h1>
+          <h1>Github Profile <span><img src={githublogo} alt="github logo"></img></span></h1>
+          
           <SearchBar handleSearchSubmit={this.handleSearchSubmit}/>
         </header>
         <Followers followers={this.state.followers} handleSearchSubmit={this.handleSearchSubmit}/>
