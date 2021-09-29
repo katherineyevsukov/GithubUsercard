@@ -27,7 +27,7 @@ export default class User extends React.Component {
                 
                 <p>Following: {user.following}</p>
                 <p>Followers: {user.followers}</p>
-                <a href={user.html_url}>View My Profile</a>
+                <a href={user.html_url} target="_blank" rel="noopener noreferrer" >View My Profile</a>
                 {/* <div className="contributions-container">
                     <img src={`https://github.com/users/${user.login}/contributions`} alt="contributon graph"></img>
                 </div> */}
