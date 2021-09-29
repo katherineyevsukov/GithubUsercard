@@ -9,9 +9,7 @@ img{
     max-height: 10vh;
     margin-right: 1em;
 }
-.follower-image-container, .user-info-container{
 
-}
 
 .user-info-container{
     font-size: 2rem;
