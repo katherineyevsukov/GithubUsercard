@@ -63,7 +63,7 @@ class App extends React.Component {
           <h1>Github Profile</h1>
           <SearchBar handleSearchSubmit={this.handleSearchSubmit}/>
         </header>
-        <User />
+        <User user={this.state.user}/>
       </StyledApp>
     );
   }
