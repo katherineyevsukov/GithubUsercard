@@ -27,6 +27,11 @@ const StyledUserContainer = styled.div`
       grid-column: 1/6;
       padding: 1em;
   }
+
+  img{ 
+      display: block;
+      margin: 0 auto;
+  }
  
 `;
 
