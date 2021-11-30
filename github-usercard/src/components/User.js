@@ -5,16 +5,14 @@ const StyledUserContainer = styled.div`
   grid-row-start: 1;
   grid-column: 1/6;
   border: 1px solid whitesmoke;
-  
 
   h2 {
     font-size: 2.5rem;
     margin: 0.5em 0;
   }
 
-  .user-container{
+  .user-container {
     padding: 2rem;
-    
   }
   .user-info-container {
     height: 30vh;
@@ -22,24 +20,21 @@ const StyledUserContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
-  .chart-container{
-     
-      grid-column: 1/6;
-      padding: 1em;
+  .chart-container {
+    grid-column: 1/6;
+    padding: 1em;
   }
 
-  img{ 
-      display: block;
-      margin: 0 auto;
+  img {
+    display: block;
+    margin: 0 auto;
   }
- 
 `;
 
 export default class User extends React.Component {
   render() {
     const { user } = this.props;
     return (
-       
       <StyledUserContainer>
         <section className="user-container">
           <div className="user-image-container">
@@ -60,17 +55,14 @@ export default class User extends React.Component {
                     <img src={`https://github.com/users/${user.login}/contributions`} alt="contributon graph"></img>
                 </div> */}
           </div>
-          
         </section>
         <div className="chart-container">
-       <img
-         src={`https://ghchart.rshah.org/${user.login}`}
-         alt="2016rshah's Github chart"
-       />
-     </div>
+          <img
+            src={`https://ghchart.rshah.org/${user.login}`}
+            alt="2016rshah's Github chart"
+          />
+        </div>
       </StyledUserContainer>
-       
-  
     );
   }
 }
